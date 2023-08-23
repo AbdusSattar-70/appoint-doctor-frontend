@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/appoint-doctor-frontend/static/css/main.576292cd.css",
-    "main.js": "/appoint-doctor-frontend/static/js/main.a4db4fdb.js",
-    "static/media/bg1.jpg": "/appoint-doctor-frontend/static/media/bg1.2b80d8d176ba75d23f17.jpg",
-    "static/media/bg2.jpg": "/appoint-doctor-frontend/static/media/bg2.c696056da22fddb3f42c.jpg",
-    "index.html": "/appoint-doctor-frontend/index.html",
-    "main.576292cd.css.map": "/appoint-doctor-frontend/static/css/main.576292cd.css.map",
-    "main.a4db4fdb.js.map": "/appoint-doctor-frontend/static/js/main.a4db4fdb.js.map"
+    "main.css": "/static/css/main.072bc576.css",
+    "main.js": "/static/js/main.a4db4fdb.js",
+    "static/media/bg1.jpg": "/static/media/bg1.2b80d8d176ba75d23f17.jpg",
+    "static/media/bg2.jpg": "/static/media/bg2.c696056da22fddb3f42c.jpg",
+    "index.html": "/index.html",
+    "main.072bc576.css.map": "/static/css/main.072bc576.css.map",
+    "main.a4db4fdb.js.map": "/static/js/main.a4db4fdb.js.map"
   },
   "entrypoints": [
-    "static/css/main.576292cd.css",
+    "static/css/main.072bc576.css",
     "static/js/main.a4db4fdb.js"
   ]
 }
