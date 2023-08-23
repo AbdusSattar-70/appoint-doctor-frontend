@@ -1,7 +1,7 @@
 {
   "name": "appoint-doctor-front-end",
   "version": "0.1.0",
-  "homepage": "https://AbdusSattar-70.github.io/appoint-doctor-frontend",
+  "homepage": "https://AbdusSattar-70.github.io",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
