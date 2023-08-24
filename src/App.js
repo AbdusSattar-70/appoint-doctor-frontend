@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/appoint-doctor-frontend" element={<HomePage />} />
         <Route path="/doctors" element={<DoctorList />} />
         <Route path="/doctor_details/:id" element={<DoctorDetails />} />
         <Route path="/delete_doctor" element={<DeleteDoctor />} />
