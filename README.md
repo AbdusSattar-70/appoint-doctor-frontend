@@ -176,7 +176,7 @@ npm run test
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[See Live on render](https://profound-heliotrope-436869.netlify.app/)
+[See Live](https://abdussattar-70.github.io/appoint-doctor-frontend/)
 
 ## 🪵 Link to Backend Repo <a name="key-features"></a>
 
