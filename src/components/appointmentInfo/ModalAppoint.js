@@ -3,12 +3,13 @@ import {
   Container, Row, Col, Form, Button,
 } from 'react-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import NavBar from '../navbar/Navbar';
 import { addAppointment } from '../../features/appointmentSlice';
 import './appointment.css';
 
 const ModalAppoint = () => {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const { id } = useParams();
   const { userName, userID } = useSelector((state) => state.auth);
@@ -36,7 +37,7 @@ const ModalAppoint = () => {
     event.preventDefault();
     dispatch(addAppointment(formData));
     setFormData({ ...initialFormData });
-    window.location.href = '/my_appointments';
+    navigate('/my_appointments');
   };
 
   const handleChange = (e) => {

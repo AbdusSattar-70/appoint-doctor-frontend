@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { FaCaretLeft } from 'react-icons/fa6';
 import { CircularProgressbarWithChildren } from 'react-circular-progressbar';
@@ -11,6 +11,7 @@ import { formatDateAndTime } from '../appointmentInfo/MyAppointments';
 const DoctorDetails = () => {
   const API_BASE_URL = 'https://booking-doctor-api-v1.onrender.com/users';
   const { id } = useParams();
+  const navigate = useNavigate();
   const [doctor, setDoctor] = useState(null);
   const [appointments, setAppointment] = useState([]);
   const [nextDoctorId, setNextDoctorId] = useState([]);
@@ -56,7 +57,7 @@ const DoctorDetails = () => {
     const currentDoctorIndex = nextDoctorId.findIndex((d) => d.id === parseInt(id, 10));
     if (currentDoctorIndex !== -1 && currentDoctorIndex < nextDoctorId.length - 1) {
       const nextDoctor = nextDoctorId[currentDoctorIndex + 1];
-      window.location.href = `/doctor_details/${nextDoctor.id}`;
+      navigate(`/doctor_details/${nextDoctor.id}`);
     }
   };
 
