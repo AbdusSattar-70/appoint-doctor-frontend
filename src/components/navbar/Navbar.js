@@ -27,7 +27,7 @@ function NavBar() {
 
   const handleSignOut = () => {
     dispatch(signOut());
-    window.location.href = '/';
+    window.location.href = '/appoint-doctor-frontend';
   };
 
   const isActiveLink = (path) => location.pathname === path;
@@ -96,8 +96,8 @@ function NavBar() {
             </NavDropdown.Item>
             {isSuperAdmin() ? (
               <NavDropdown title="For Super Admin" id="nav-dropdown" className="p-3 super_admin">
-                <NavDropdown.Item href="/user_list">User Lists</NavDropdown.Item>
-                <NavDropdown.Item href="/appointment_list">Appointments Lists</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/user_list">User Lists</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/appointment_list">Appointments Lists</NavDropdown.Item>
                 <NavDropdown.Divider />
               </NavDropdown>
             ) : (
@@ -183,8 +183,8 @@ function NavBar() {
                   </NavDropdown.Item>
                   {isSuperAdmin() ? (
                     <NavDropdown title="For Super Admin" id="nav-dropdown" className="p-3 super_admin">
-                      <NavDropdown.Item href="/user_list">User Lists</NavDropdown.Item>
-                      <NavDropdown.Item href="/appointment_list">Appointments Lists</NavDropdown.Item>
+                      <NavDropdown.Item as={NavLink} to="/user_list">User Lists</NavDropdown.Item>
+                      <NavDropdown.Item as={NavLink} to="/appointment_list">Appointments Lists</NavDropdown.Item>
                       <NavDropdown.Divider />
                     </NavDropdown>
                   ) : (
