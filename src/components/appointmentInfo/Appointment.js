@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {
   Container, Row, Col, Form, Button,
 } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import NavBar from '../navbar/Navbar';
 import { addAppointment } from '../../features/appointmentSlice';
@@ -10,6 +11,8 @@ import './appointment.css';
 import { formatDateAndTime } from './MyAppointments';
 
 const Appointment = () => {
+  const navigate = useNavigate();
+
   const dispatch = useDispatch();
   const { userName, userID } = useSelector((state) => state.auth);
   const doctors = useSelector((state) => state.doctors.doctors);
@@ -40,7 +43,7 @@ const Appointment = () => {
     event.preventDefault();
     dispatch(addAppointment(formData));
     setFormData({ ...initialFormData });
-    window.location.href = '/my_appointments';
+    navigate('/my_appointments');
   };
 
   const handleChange = (e) => {
