@@ -12,9 +12,9 @@ import ModalAppoint from './components/appointmentInfo/ModalAppoint';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/appoint-doctor-frontend">
       <Routes>
-        <Route path="/appoint-doctor-frontend" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/doctors" element={<DoctorList />} />
         <Route path="/doctor_details/:id" element={<DoctorDetails />} />
         <Route path="/delete_doctor" element={<DeleteDoctor />} />
