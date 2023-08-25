@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/appoint-doctor-frontend/static/css/main.576292cd.css",
-    "main.js": "/appoint-doctor-frontend/static/js/main.2e7b032c.js",
+    "main.js": "/appoint-doctor-frontend/static/js/main.8a235b4d.js",
     "static/media/bg1.jpg": "/appoint-doctor-frontend/static/media/bg1.2b80d8d176ba75d23f17.jpg",
     "static/media/bg2.jpg": "/appoint-doctor-frontend/static/media/bg2.c696056da22fddb3f42c.jpg",
     "index.html": "/appoint-doctor-frontend/index.html",
     "main.576292cd.css.map": "/appoint-doctor-frontend/static/css/main.576292cd.css.map",
-    "main.2e7b032c.js.map": "/appoint-doctor-frontend/static/js/main.2e7b032c.js.map"
+    "main.8a235b4d.js.map": "/appoint-doctor-frontend/static/js/main.8a235b4d.js.map"
   },
   "entrypoints": [
     "static/css/main.576292cd.css",
-    "static/js/main.2e7b032c.js"
+    "static/js/main.8a235b4d.js"
   ]
 }
