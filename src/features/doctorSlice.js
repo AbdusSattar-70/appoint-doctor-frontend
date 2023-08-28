@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const BASE_URL = 'https://booking-doctor-api-v1.onrender.com/users';
+const BASE_URL = 'https://doctor-api-v1.onrender.com/users';
 
 const initialState = {
   status: 'idle',
@@ -49,7 +49,7 @@ export const addDoctor = createAsyncThunk('doctors/addDoctor', async (doctorData
 // Async Thunk for fetching doctors
 export const fetchDoctors = createAsyncThunk('doctors/fetchDoctors', async () => {
   try {
-    const response = await axios.get('https://booking-doctor-api-v1.onrender.com/users?role=doctor', {
+    const response = await axios.get('https://doctor-api-v1.onrender.com/users?role=doctor', {
       headers: {
         Authorization: sessionStorage.getItem('authToken'),
       },
@@ -64,7 +64,7 @@ export const deleteDoctor = createAsyncThunk(
   'appointments/deleteDoctor',
   async (doctorId, { rejectWithValue }) => {
     try {
-      await axios.delete(`https://booking-doctor-api-v1.onrender.com/users/${doctorId}`, {
+      await axios.delete(`https://doctor-api-v1.onrender.com/users/${doctorId}`, {
         headers: {
           Authorization: sessionStorage.getItem('authToken'),
         },
