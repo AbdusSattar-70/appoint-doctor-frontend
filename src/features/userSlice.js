@@ -9,7 +9,7 @@ const initialState = {
 
 export const fetchUsers = createAsyncThunk('users/fetchUsers', async () => {
   try {
-    const response = await axios.get('https://booking-doctor-api-v1.onrender.com/users');
+    const response = await axios.get('https://doctor-api-v1.onrender.com/users');
     return response.data;
   } catch (error) {
     throw new Error(error);
@@ -18,7 +18,7 @@ export const fetchUsers = createAsyncThunk('users/fetchUsers', async () => {
 
 export const deleteUser = createAsyncThunk('users/deleteUser', async (userId) => {
   try {
-    const response = await axios.delete(`https://booking-doctor-api-v1.onrender.com/users/${userId}`, {
+    const response = await axios.delete(`https://doctor-api-v1.onrender.com/users/${userId}`, {
       headers: {
         Authorization: sessionStorage.getItem('authToken'),
       },
